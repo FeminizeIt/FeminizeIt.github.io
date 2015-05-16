@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feminize It!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="fem.css">
+
+    <style type="text/css">
+      input.gsc-input {
+        border-color: #004220;
+        width:10px;  
+      }
+      input.gsc-search-button {
+        border-color: #004220;
+        background-color: #004220;
+        width:10px;
+      }
+    </style>
+
+   <script type="text/javascript">
+    //     var ViewModel = function(searchTerm) {
+    //         this.searchTerm = ko.observable(searchT);
+         
+    //         this.searchTerm = ko.pureComputed(function() {
+    //             // Knockout tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.
+    //             return this.searchTerm;
+    //         }, this);
+    //     };
+    // </script>
+
+    <script type="text/javascript">
+
+    //     // Create the hashmap
+    //     var map = {};
+    //     var terms = document.getElementsByTagName("a"), obj;
+    //     for (var i = 0; i < links.length; i++) {
+    //         obj = terms[i];
+    //         map[obj.href] = obj;
+    //     }
+
+        var terms = {
+            "tent" : 0,
+            "bookcase" : 1,
+            "shaving razor" : 2,
+            "weights" : 3,
+            "cup" : 4,
+            "spoon" : 5,
+            "chair" : 6,
+            "generator" : 7,
+            "claw hammer" : 8,
+            "fan" : 9,
+            "bucket" : 10,
+            "toaster" : 11,
+        }
+
+    //     for(var index in terms) {
+    //         window.location.href = index;
+    //     }
+
+        function othername() {
+
+        var input = document.getElementById('userInput').value;
+
+
+        if (input == "weights") {
+            window.location.href = "result.html";
+        }
+
+        if (input == "tent") {
+            window.location.href = "result1.html";
+        }
+
+        if (input == "generator") {
+            window.location.href = "result2.html";
+        }        
+
+    }
+    </script>
+</head>
+
+<body>
+    <img id="hplogo" src="logo11w.png" style="padding-top:112px" width="269px">
+    <br>
+
+    <div class="searchBox">
+        <!-- <input type="text" data-bind="value: input" id="q" />
+        <input type="button" id="submit" value="SEARCH" /> -->
+        <form id="form" onsubmit="return false;">
+            <input   style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
+            <input   style=position:absolute;top:50%;left:5%;width:40%; type="submit"    onclick="othername()">
+        </form>
+
+    </div>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-git2.min.js"></script>
+
+</html>
