@@ -2,8 +2,8 @@ html,body {
 	text-align: center;
 }
 
-#button {
-	margin: 50px;
+#button img {
+	padding: 50px;
 }
 
 .searchBox { 
