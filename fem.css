@@ -1,4 +1,4 @@
-body {
+html,body {
 	text-align: center;
 }
 
@@ -10,5 +10,13 @@ body {
 	width: 50%;
 	margin-left: 25%;
 	margin-top: 50px;
+}
+
+#descript {
+	font-size: 18px;
+	width: 500px;
 	text-align: center;
+	position: absolute;
+	left: 32%;
+	top: 200px;
 }
