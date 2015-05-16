@@ -5,3 +5,7 @@ body {
 #button {
 	margin: 50px;
 }
+
+.searchBox { 
+	width: 50%; 
+}
